@@ -57,7 +57,7 @@ function Navbar() {
           >
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
               <a
-                className="font-medium md:py-6 text-blue-500"
+                className="font-medium md:py-6 text-[#ffb606]"
                 href="#"
                 aria-current="page"
               >

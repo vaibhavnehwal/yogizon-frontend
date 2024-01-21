@@ -140,7 +140,7 @@ function Products() {
     ]
 
     const [currentPage, setCurrentPage] = useState(1);
-    const [coursesPerPage, setCoursesPerPage] = useState(3);
+    const [coursesPerPage, setCoursesPerPage] = useState(6);
 
     const coursesList = courses.map((course) => {
         return (
@@ -165,7 +165,7 @@ function Products() {
 
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen sm:my-5 my-12">
+    <div className="flex flex-col justify-center items-center min-h-screen my-16">
       <div className="flex flex-col justify-center item-center gap-[2rem] my-[3rem] text-center">
         <h1 className="text-4xl font-bold text-gray-800">Courses</h1>
         <p>
