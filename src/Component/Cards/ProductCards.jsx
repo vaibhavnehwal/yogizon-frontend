@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ProductCards(props) {
   
+    const id = props.id;
     const title = props.title;
     const badgeDesc = props.badgeDesc;
     const image = props.image;
@@ -39,12 +41,13 @@ function ProductCards(props) {
             <span className="font-bold text-3xl text-gray-800">
                 {price}
             </span>
-            <a
+            <Link
+              to={`/products/${id}`}
               className="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#ffb606] text-white hover:bg-[#ffb606]700 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-"
               href="#"
             >
               {linkDesc}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
