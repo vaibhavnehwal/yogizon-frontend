@@ -4,13 +4,15 @@ import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Products from '../Products/Products'
 import ProductPage from '../Products/ProductPage/ProductPage'
+import Home from '../Home/Home'
 
 function Routers() {
   return (
     <div>
         <Navbar />
         <Routes>
-            <Route path="/" element={<Products/>}/>
+            <Route path='/' element={<Home/>} />
+            {/* <Route path="/" element={<Products/>}/> */}
             <Route path="/products/:productID" element={<ProductPage/>}/>
         </Routes>
         <Footer />
