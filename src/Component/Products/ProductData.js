@@ -8,7 +8,13 @@ const courses = [
         price: "₹100",
         link: "#",
         linkDesc: "Learn More",
-        duration: "30 Days"
+        duration: "30 Days",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+        tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 1,
@@ -19,7 +25,13 @@ const courses = [
         price: "₹20",
         link: "#",
         linkDesc: "Learn More",
-        duration: "90 Days"
+        duration: "90 Days",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+        tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 2,
@@ -30,7 +42,13 @@ const courses = [
         price: "₹160",
         link: "#",
         linkDesc: "Learn More",
-        duration: "300 Days"
+        duration: "300 Days",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+        tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 3,
@@ -41,7 +59,13 @@ const courses = [
         price: "Free",
         link: "#",
         linkDesc: "Learn More",
-        duration: "4 Weeks"
+        duration: "4 Weeks",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+        tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 4,
@@ -52,7 +76,13 @@ const courses = [
         price: "₹110",
         link: "#",
         linkDesc: "Learn More",
-        duration: "10 Weeks"
+        duration: "10 Weeks",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+        tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 5,
@@ -63,7 +93,13 @@ const courses = [
         price: "Free",
         link: "#",
         linkDesc: "Learn More",
-        duration: "10 Weeks"
+        duration: "10 Weeks",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+                tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 6,
@@ -74,7 +110,13 @@ const courses = [
         price: "₹45",
         link: "#",
         linkDesc: "Learn More",
-        duration: "10 Weeks"
+        duration: "10 Weeks",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+                tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 7,
@@ -85,7 +127,13 @@ const courses = [
         price: "₹210",
         link: "#",
         linkDesc: "Learn More",
-        duration: "9 Weeks"
+        duration: "9 Weeks",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+                tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 8,
@@ -96,7 +144,13 @@ const courses = [
         price: "₹145",
         link: "#",
         linkDesc: "Learn More",
-        duration: "6 Weeks"
+        duration: "6 Weeks",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+                tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 9,
@@ -107,7 +161,13 @@ const courses = [
         price: "₹189",
         link: "#",
         linkDesc: "Learn More",
-        duration: "3 Weeks"
+        duration: "3 Weeks",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+                tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 10,
@@ -118,7 +178,13 @@ const courses = [
         price: "Free",
         link: "#",
         linkDesc: "Learn More",
-        duration: "7 Weeks"
+        duration: "7 Weeks",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+                tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
     {
         id: 11,
@@ -129,7 +195,13 @@ const courses = [
         price: "₹125",
         link: "#",
         linkDesc: "Learn More",
-        duration: "10 Weeks"
+        duration: "10 Weeks",
+        tabTitle1: "Overview",
+        tabTitle2: "Curriculum",
+        tabTitle3: "Instructor",
+                tabContent1: "This is the first tab content",
+        tabContent2: "This is the second tab content",
+        tabContent3: "This is the third tab content",
     },
 ]
 
