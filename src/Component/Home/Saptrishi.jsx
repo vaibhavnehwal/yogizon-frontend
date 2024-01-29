@@ -1,85 +1,122 @@
 import React, {useState, useEffect, useRef} from 'react'
 
 function Saptrishi() {
-  const canvasRef = useRef(null);
-  const canvasSize = useRef([window.innerWidth, window.innerHeight]);
 
-  const drawCircle = (ctx, x, y, r) => {
-    ctx.beginPath();
-    ctx.fillStyle = "white"
-    ctx.arc(x, y, r, 0, 2 * Math.PI);
-    ctx.fill(); 
-  }
+  const [circleSize, setCircleSize] = useState({
+    c1: 3,
+    c2: 3,
+    c3: 3,
+    c4: 3,
+    c5: 3,
+    c6: 3,
+    c7: 3,
+  });
+  // const canvasRef = useRef(null);
+  // const canvasSize = useRef([window.innerWidth, window.innerHeight]);
+  // const [mousePos, setMousePos] = useState({x: 0, y: 0});
 
-  const drawPath = (ctx, x1, y1, x2, y2) => {
-    ctx.beginPath();
-    ctx.strokeStyle = "white"
-    ctx.moveTo(x1, y1);
-    ctx.lineTo(x2, y2);
-    ctx.lineWidth = 2;
-    ctx.stroke();
-  }
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+  // const drawCircle = (ctx, x, y, r) => {
+  //   ctx.beginPath();
+  //   ctx.fillStyle = "white"
+  //   ctx.arc(x, y, r, 0, 2 * Math.PI);
+  //   ctx.fill(); 
+  // }
 
+  // const drawPath = (ctx, x1, y1, x2, y2) => {
+  //   ctx.beginPath();
+  //   ctx.strokeStyle = "white"
+  //   ctx.moveTo(x1, y1);
+  //   ctx.lineTo(x2, y2);
+  //   ctx.lineWidth = 2;
+  //   ctx.stroke();
+  // }
+
+//   const getCoordinates = (e) => {
+//     const canvas = canvasRef.current;
+//     const ctx = canvas.getContext('2d');
+
+//     drawCircle(ctx, e.clientX, e.clientY, 5);
+//     console.log(e.clientX, e.clientY)
+
+// };
+
+  // useEffect(() => {
+  //   const canvas = canvasRef.current;
+  //   const ctx = canvas.getContext('2d');
+
+  //   // canvas.addEventListener('mousemove', (e) => {
+  //   //     console.log(e.clientX, e.clientY);
+  //   // })
     
     
     
-    drawCircle(ctx, 300, 40, 5);
-    drawPath(ctx, 95, 40, 250, 47);
+  //   // drawCircle(ctx, 300, 40, 5);
+  //   drawPath(ctx, 95, 40, 1149, 207);
     
     
-    }, []);
+  //   }, []);
 
 
   return (
     <>
-
-        <div className='flex justify-center items-center'>
-          
-        </div>
     <div className='flex justify-center items-center mt-[10em] py-[40px] bg-[black]'>
+
+    <svg width="900" height="495" viewBox="0 0 339 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="157.713" y1="93.5907" x2="214.713" y2="53.5907" stroke="white"/>
+      <line x1="216.646" y1="52.6464" x2="253.646" y2="15.6464" stroke="white"/>
+      <line x1="38.5251" y1="184.156" x2="12.5251" y2="105.156" stroke="white"/>
+      <line x1="15.9614" y1="104.501" x2="157.961" y2="93.5015" stroke="white"/>
+      <line x1="254.02" y1="15.5004" x2="330.02" y2="18.5004" stroke="white"/>
+      <line x1="38.9171" y1="183.507" x2="151.917" y2="164.507" stroke="white"/>
+      <line x1="152.501" y1="164.963" x2="157.501" y2="96.9633" stroke="white"/>
+      <circle cx="254" cy="16" r={circleSize.c1} fill="#D9D9D9" onMouseOver={() => {setCircleSize({...circleSize, c1: 4})}} onMouseOut={() => {setCircleSize({...circleSize, c1: 3})}} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer'/>
+      <circle cx="330" cy="19" r={circleSize.c2} fill="#D9D9D9" onMouseOver={() => {setCircleSize({...circleSize, c2: 4})}} onMouseOut={() => {setCircleSize({...circleSize, c2: 3})}} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer' />
+      <circle cx="216" cy="53" r={circleSize.c3} fill="#D9D9D9" onMouseOver={() => {setCircleSize({...circleSize, c3: 4})}} onMouseOut={() => {setCircleSize({...circleSize, c3: 3})}} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer' />
+      <circle cx="39" cy="184" r={circleSize.c4} fill="#D9D9D9" onMouseOver={() => {setCircleSize({...circleSize, c4: 4})}} onMouseOut={() => {setCircleSize({...circleSize, c4: 3})}} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer' />
+      <circle cx="13" cy="105" r={circleSize.c5} fill="#D9D9D9" onMouseOver={() => {setCircleSize({...circleSize, c5: 4})}} onMouseOut={() => {setCircleSize({...circleSize, c5: 3})}} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer'/>
+      <circle cx="153" cy="165" r={circleSize.c6} fill="#D9D9D9" onMouseOver={() => {setCircleSize({...circleSize, c6: 4})}} onMouseOut={() => {setCircleSize({...circleSize, c6: 3})}} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer'/>
+      <circle cx="158" cy="94" r={circleSize.c7} fill="#D9D9D9" onMouseOver={() => {setCircleSize({...circleSize, c7: 4})}} onMouseOut={() => {setCircleSize({...circleSize, c7: 3})}} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer'/>
+    </svg>
       
 
-      <canvas ref={canvasRef} width={canvasSize.current[0] - 10} height={canvasSize.current[1]/1.3} className={`border-[2px]`} />
+      {/* <canvas ref={canvasRef} width={canvasSize.current[0] - 10} height={canvasSize.current[1]/1.3} onClick={getCoordinates} className={`border-[2px]`} /> */}
 
-      {/* <div className='saptarishit-container border-[1px] relative w-[60%] h-[30em]'>
+      {/* <div className='saptarishit-container border-[1px] relative w-[80%] h-[30em]'>
 
-      <div className=' absolute top-[10%] right-[20%] flex justify-center items-center rotate-[-176deg]'>
+      <div className=' absolute top-[3em] right-[11em] flex justify-center items-center rotate-[-176deg]'>
         <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[10em] bg-[white] rounded-full'></div>
+        <div className='h-[2px] w-[13em] bg-[white] rounded-full'></div>
       </div>
 
-      <div className=' absolute top-[19.5%] right-[34%] flex justify-center items-center rotate-[-220deg]'>
-        <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[5em] bg-[white] rounded-full'></div>
-      </div>
-
-      <div className=' absolute top-[43%] right-[40%] flex justify-center items-center rotate-[-216deg]'>
+      <div className=' absolute top-[4.5em] right-[23.5em] flex justify-center items-center rotate-[-220deg]'>
         <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
         <div className='h-[2px] w-[6em] bg-[white] rounded-full'></div>
       </div>
 
-      <div className=' absolute flex justify-center items-center'>
+      <div className=' absolute top-[9em] right-[28.5em] flex justify-center items-center rotate-[-214deg]'>
         <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[5em] bg-[white] rounded-full'></div>
+        <div className='h-[2px] w-[8em] bg-[white] rounded-full'></div>
       </div>
 
-      <div className=' absolute flex justify-center items-center'>
+      <div className=' absolute top-[11.9em] left-[19.2em] flex justify-center items-center rotate-[-183deg]'>
         <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[5em] bg-[white] rounded-full'></div>
+        <div className='h-[2px] w-[18em] bg-[white] rounded-full'></div>
       </div>
 
-      <div className=' absolute flex justify-center items-center'>
+      <div className=' absolute top-[15.9em] right-[32.7em] flex justify-center items-center rotate-[-80deg]'>
         <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[5em] bg-[white] rounded-full'></div>
+        <div className='h-[2px] w-[8.5em] bg-[white] rounded-full'></div>
       </div>
 
-      <div className=' absolute flex justify-center items-center'>
+      <div className=' absolute top-[16.7em] left-[15.5em] flex justify-center items-center rotate-[75deg]'>
         <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[5em] bg-[white] rounded-full'></div>
+        <div className='h-[2px] w-[9em] bg-[white] rounded-full'></div>
+      </div>
+
+      <div className=' absolute top-[20.8em] left-[21.3em] flex justify-center items-center rotate-[-5.4deg]'>
+        <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
+        <div className='h-[2px] w-[14em] bg-[white] rounded-full'></div>
       </div>
 
       </div> */}
