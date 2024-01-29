@@ -3,35 +3,12 @@ import PopoverCard from "./Saptrishi/PopoverCard";
 
 function Saptrishi() {
   const [circleSize, setCircleSize] = useState({
-    c1: {
-      size: 3,
-      isHover: false,
-    },
-    c2: {
-      size: 3,
-      isHover: false,
-    },
-    c3: {
-      size: 3,
-      isHover: false,
-    },
-    c4: {
-      size: 3,
-      isHover: false,
-    },
-    c5: {
-      size: 3,
-      isHover: false,
-    },
-    c6: {
-      size: 3,
-      isHover: false,
-    },
-    c7: {
-      size: 3,
-      isHover: false,
-    },
+    c1: 3, c2: 3, c3: 3, c4: 3,
+    c5: 3, c6: 3, c7: 3,
   });
+
+  const [popOver, setPopOver] = useState(null);
+
   // const canvasRef = useRef(null);
   // const canvasSize = useRef([window.innerWidth, window.innerHeight]);
   // const [mousePos, setMousePos] = useState({x: 0, y: 0});
@@ -142,9 +119,18 @@ function Saptrishi() {
               fill="#D9D9D9"
               onMouseOver={() => {
                 setCircleSize({ ...circleSize, c1: 4 });
-              }}
+                setPopOver({
+                  title: "Atri",
+                  description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
+                  link: "/",
+                  img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
+                  topVal: "40%",
+                  leftVal: "80%",
+              })
+            }}
               onMouseOut={() => {
                 setCircleSize({ ...circleSize, c1: 3 });
+                setPopOver(null);
               }}
               className="cursor-pointer"
             />
@@ -241,15 +227,16 @@ function Saptrishi() {
           </svg>
         </svg>
 
+        { popOver !== null ? 
         <PopoverCard
-          className=""
-          id="c1"
-          title="Brahmarshi Atri"
-          description="Brahmarshi Atri is one of the Saptarishis in the first Manvantara, and the one who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism."
-          link="https://en.wikipedia.org/wiki/Atri"
-          linkText="Read More"
-          img="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Atri.jpg/220px-Atri.jpg"
+          title={popOver.title}
+          description={popOver.description}
+          link={popOver.link}
+          img={popOver.img}
+          topVal={popOver.topVal}
+          leftVal={popOver.leftVal}
         />
+        : null }
 
 
 

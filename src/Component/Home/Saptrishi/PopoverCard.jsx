@@ -1,10 +1,12 @@
+import {Link} from 'react-router-dom';
+
 
 function PopoverCard(props) {
 
-  const {id, title, description, link, linkText, img } = props;
+  const {id, title, description, link, img, topVal, leftVal } = props;
 
   return (
-    <div id={id} className="w-[20%] flex flex-col absolute top-0 bg-white border shadow-sm rounded-xl ">
+    <div className={`w-[20%] flex flex-col absolute top-[${topVal}] left-[${leftVal}] bg-white border shadow-sm rounded-xl `}>
       <img
         className="w-full h-auto rounded-t-xl"
         src={img}
@@ -17,12 +19,12 @@ function PopoverCard(props) {
         <p className="mt-1 text-gray-500">
           {description}
         </p>
-        <a
+        <Link
           className="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-          href={link}
+          to={link}
         >
-          {linkText}
-        </a>
+          Read More
+        </Link>
       </div>
     </div>
   );
