@@ -9,13 +9,13 @@ function Navbar() {
           aria-label="Global"
         >
           <div className="flex items-center justify-between">
-            <a
+            <Link
               className="flex-none text-xl font-semibold text-gray-800 hover:text-gray-900"
-              href="#"
+              to="#"
               aria-label="Brand"
             >
               YogiZon
-            </a>
+            </Link>
             <div className="md:hidden">
               <button
                 type="button"
@@ -64,42 +64,42 @@ function Navbar() {
               >
                 Home
               </Link>
-              <a
+              <Link
                 className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                href="#"
+                to="/courses"
               >
                 Courses
-              </a>
-              <a
+              </Link>
+              <Link
                 className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                href="#"
+                to="/courses"
               >
                 Schedule
-              </a>
-              <a
+              </Link>
+              <Link
                 className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                href="#"
+                to="#"
               >
                 Our Team
-              </a>
-              <a
+              </Link>
+              <Link
                 className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                href="#"
+                to="#"
               >
                 Shop
-              </a>
-              <a
+              </Link>
+              <Link
                 className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                href="#"
+                to="#"
               >
                 Volunteer with Us
-              </a>
-              <a
+              </Link>
+              <Link
                 className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                href="#"
+                to="#"
               >
                 Contact Us
-              </a>
+              </Link>
 
               <div className="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
                 <button
@@ -121,36 +121,36 @@ function Navbar() {
                 </button>
 
                 <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-white md:shadow-md rounded-lg p-2  md:border border-gray-700 divide-gray-700 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
-                  <a
+                  <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-700 hover:text-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-600"
-                    href="#"
+                    to="#"
                   >
                     About
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-700 hover:text-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-600"
-                    href="#"
+                    to="#"
                   >
                     Blog
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-700 hover:text-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-600"
-                    href="#"
+                    to="#"
                   >
                     Success Stories
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-700 hover:text-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-600"
-                    href="#"
+                    to="#"
                   >
                     Yoga Retreats
-                  </a>
+                  </Link>
                 </div>
               </div>
 
-              <a
+              <Link
                 className="flex items-center gap-x-2 font-medium md:border-s md:border-gray-300 md:my-6 md:ps-6 border-gray-700 text-gray-400 hover:text-blue-500"
-                href="#"
+                to="#"
               >
                 <svg
                   className="flex-shrink-0 w-4 h-4"
@@ -165,7 +165,7 @@ function Navbar() {
                   <circle cx="12" cy="7" r="4" />
                 </svg>
                 Log in
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
