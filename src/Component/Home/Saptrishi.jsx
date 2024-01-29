@@ -44,8 +44,8 @@ function Saptrishi() {
         description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
         link: "/",
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
-        topVal: "top-[63%]",
-        leftVal: "left-[12%]",
+        topVal: "top-[67%]",
+        leftVal: "left-[1%]",
       },
     },
     c5: {
@@ -55,8 +55,8 @@ function Saptrishi() {
         description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
         link: "/",
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
-        topVal: "top-[51%]",
-        leftVal: "left-[8%]",
+        topVal: "top-[17%]",
+        leftVal: "left-[4%]",
       },
     }, 
     c6: {
@@ -77,8 +77,8 @@ function Saptrishi() {
         description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
         link: "/",
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
-        topVal: "top-[49%]",
-        leftVal: "left-[49%]",
+        topVal: "top-[50%]",
+        leftVal: "left-[50%]",
       },
     },
   });
@@ -86,9 +86,9 @@ function Saptrishi() {
   const [popOver, setPopOver] = useState(null);
 
   const popOverTimer =  () => {
-    setTimeout(() => {
-      setPopOver(null)
-    }, 4000)
+    // setTimeout(() => {
+    //   setPopOver(null)
+    // }, 4000)
   }
     
   return (

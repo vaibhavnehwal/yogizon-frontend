@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 
 function PopoverCard(props) {
 
-  const {id, title, description, link, img, topVal, leftVal } = props;
+  const {title, description, link, img, topVal, leftVal } = props;
 
   return (
-    <div className={`w-[20%] flex flex-col absolute ${topVal} ${leftVal} bg-white border shadow-sm rounded-xl `}>
+    <div className={`w-[20%] flex flex-col absolute ${topVal} ${leftVal} bg-white border shadow-sm rounded-xl transition-all duration-500 `}>
       <img
         className="w-full h-auto rounded-t-xl"
         src={img}
