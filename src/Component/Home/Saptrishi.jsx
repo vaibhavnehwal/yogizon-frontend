@@ -45,7 +45,7 @@ function Saptrishi() {
         link: "/",
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
         topVal: "top-[67%]",
-        leftVal: "left-[1%]",
+        leftVal: "left-[5%]",
       },
     },
     c5: {
@@ -55,8 +55,8 @@ function Saptrishi() {
         description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
         link: "/",
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
-        topVal: "top-[17%]",
-        leftVal: "left-[4%]",
+        topVal: "top-[22%]",
+        leftVal: "left-[12%]",
       },
     }, 
     c6: {
