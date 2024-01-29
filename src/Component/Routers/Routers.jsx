@@ -12,8 +12,8 @@ function Routers() {
         <Navbar />
         <Routes>
             <Route path='/' element={<Home/>} />
-            {/* <Route path="/" element={<Products/>}/> */}
-            <Route path="/products/:productID" element={<ProductPage/>}/>
+            <Route path="/courses" element={<Products/>}/>
+            <Route path="/courses/:courseID" element={<ProductPage/>}/>
         </Routes>
         <Footer />
     </div>
