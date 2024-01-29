@@ -1,6 +1,9 @@
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 function Navbar() {
+
+  const setActive = ({ isActive, isPending }) => isPending ? "font-medium md:py-6 text-gray-400 hover:text-gray-500" : isActive ? "font-medium md:py-6 text-[#ffb606]" : "";
+
   return (
     <div>
       <header className="fixed top-0 left-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
@@ -9,13 +12,13 @@ function Navbar() {
           aria-label="Global"
         >
           <div className="flex items-center justify-between">
-            <Link
+            <NavLink
               className="flex-none text-xl font-semibold text-gray-800 hover:text-gray-900"
               to="#"
               aria-label="Brand"
             >
               YogiZon
-            </Link>
+            </NavLink>
             <div className="md:hidden">
               <button
                 type="button"
@@ -57,49 +60,49 @@ function Navbar() {
             className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
           >
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
-              <Link
-                className="font-medium md:py-6 text-[#ffb606]"
+              <NavLink
+                className={setActive}
                 to="/"
                 aria-current="page"
               >
                 Home
-              </Link>
-              <Link
-                className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
+              </NavLink>
+              <NavLink
+                className={setActive}
                 to="/courses"
               >
                 Courses
-              </Link>
-              <Link
-                className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                to="/courses"
+              </NavLink>
+              <NavLink
+                className={setActive}
+                to=""
               >
                 Schedule
-              </Link>
-              <Link
-                className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                to="#"
+              </NavLink>
+              <NavLink
+                className={setActive}
+                to=""
               >
                 Our Team
-              </Link>
-              <Link
-                className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                to="#"
+              </NavLink>
+              <NavLink
+                className={setActive}
+                to=""
               >
                 Shop
-              </Link>
-              <Link
-                className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                to="#"
+              </NavLink>
+              <NavLink
+                className={setActive}
+                to=""
               >
                 Volunteer with Us
-              </Link>
-              <Link
-                className="font-medium md:py-6 text-gray-400 hover:text-gray-500"
-                to="#"
+              </NavLink>
+              <NavLink
+                className={setActive}
+                to=""
               >
                 Contact Us
-              </Link>
+              </NavLink>
 
               <div className="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
                 <button
@@ -121,36 +124,36 @@ function Navbar() {
                 </button>
 
                 <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-white md:shadow-md rounded-lg p-2  md:border border-gray-700 divide-gray-700 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
-                  <Link
+                  <NavLink
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-700 hover:text-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-600"
-                    to="#"
+                    to=""
                   >
                     About
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-700 hover:text-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-600"
-                    to="#"
+                    to=""
                   >
                     Blog
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-700 hover:text-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-600"
-                    to="#"
+                    to=""
                   >
                     Success Stories
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-700 hover:text-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-600"
-                    to="#"
+                    to=""
                   >
                     Yoga Retreats
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
 
-              <Link
+              <NavLink
                 className="flex items-center gap-x-2 font-medium md:border-s md:border-gray-300 md:my-6 md:ps-6 border-gray-700 text-gray-400 hover:text-blue-500"
-                to="#"
+                to=""
               >
                 <svg
                   className="flex-shrink-0 w-4 h-4"
@@ -165,7 +168,7 @@ function Navbar() {
                   <circle cx="12" cy="7" r="4" />
                 </svg>
                 Log in
-              </Link>
+              </NavLink>
             </div>
           </div>
         </nav>

@@ -13,7 +13,7 @@ function Routers() {
         <Routes>
             <Route path='/' element={<Home/>} />
             <Route path="/courses" element={<Products/>}/>
-            <Route path="/courses/:courseID" element={<ProductPage/>}/>
+            <Route path="/products/:productID" element={<ProductPage/>}/>
         </Routes>
         <Footer />
     </div>
