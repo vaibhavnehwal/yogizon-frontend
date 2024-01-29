@@ -6,7 +6,7 @@ function PopoverCard(props) {
   const {id, title, description, link, img, topVal, leftVal } = props;
 
   return (
-    <div className={`w-[20%] flex flex-col absolute top-[${topVal}] left-[${leftVal}] bg-white border shadow-sm rounded-xl `}>
+    <div className={`w-[20%] flex flex-col absolute ${topVal} ${leftVal} bg-white border shadow-sm rounded-xl `}>
       <img
         className="w-full h-auto rounded-t-xl"
         src={img}

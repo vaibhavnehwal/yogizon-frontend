@@ -1,66 +1,107 @@
 import React, { useState, useEffect, useRef } from "react";
 import PopoverCard from "./Saptrishi/PopoverCard";
+import SaptarishiSky from "../../assets/img/Home/star_bg.gif"
 
 function Saptrishi() {
-  const [circleSize, setCircleSize] = useState({
-    c1: 3, c2: 3, c3: 3, c4: 3,
-    c5: 3, c6: 3, c7: 3,
+  const [circle, setCircle] = useState({
+    c1: {
+      size: 3,
+      data: {
+        title: "Atri 1",
+        description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
+        link: "/",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
+        topVal: "top-[32%]",
+        leftVal: "left-[62%]",
+      },
+    },
+    c2: {
+      size: 3,
+      data: {
+        title: "Atri 2",
+        description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
+        link: "/",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
+        topVal: "top-[30%]",
+        leftVal: "left-[74%]",
+      },
+    },
+    c3: {
+      size: 3,
+      data: {
+        title: "Atri 3",
+        description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
+        link: "/",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
+        topVal: "top-[40%]",
+        leftVal: "left-[58%]",
+      },
+    },
+    c4: {
+      size: 3,
+      data: {
+        title: "Atri 4",
+        description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
+        link: "/",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
+        topVal: "top-[63%]",
+        leftVal: "left-[12%]",
+      },
+    },
+    c5: {
+      size: 3,
+      data: {
+        title: "Atri 5",
+        description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
+        link: "/",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
+        topVal: "top-[51%]",
+        leftVal: "left-[8%]",
+      },
+    }, 
+    c6: {
+      size: 3,
+      data: {
+        title: "Atri 6 ",
+        description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
+        link: "/",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
+        topVal: "top-[60%]",
+        leftVal: "left-[49%]",
+      },
+    }, 
+    c7: {
+      size: 3,
+      data: {
+        title: "Atri 7",
+        description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
+        link: "/",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
+        topVal: "top-[49%]",
+        leftVal: "left-[49%]",
+      },
+    },
   });
 
   const [popOver, setPopOver] = useState(null);
 
-  // const canvasRef = useRef(null);
-  // const canvasSize = useRef([window.innerWidth, window.innerHeight]);
-  // const [mousePos, setMousePos] = useState({x: 0, y: 0});
-
-  // const drawCircle = (ctx, x, y, r) => {
-  //   ctx.beginPath();
-  //   ctx.fillStyle = "white"
-  //   ctx.arc(x, y, r, 0, 2 * Math.PI);
-  //   ctx.fill();
-  // }
-
-  // const drawPath = (ctx, x1, y1, x2, y2) => {
-  //   ctx.beginPath();
-  //   ctx.strokeStyle = "white"
-  //   ctx.moveTo(x1, y1);
-  //   ctx.lineTo(x2, y2);
-  //   ctx.lineWidth = 2;
-  //   ctx.stroke();
-  // }
-
-  //   const getCoordinates = (e) => {
-  //     const canvas = canvasRef.current;
-  //     const ctx = canvas.getContext('2d');
-
-  //     drawCircle(ctx, e.clientX, e.clientY, 5);
-  //     console.log(e.clientX, e.clientY)
-
-  // };
-
-  // useEffect(() => {
-  //   const canvas = canvasRef.current;
-  //   const ctx = canvas.getContext('2d');
-
-  //   // canvas.addEventListener('mousemove', (e) => {
-  //   //     console.log(e.clientX, e.clientY);
-  //   // })
-
-  //   // drawCircle(ctx, 300, 40, 5);
-  //   drawPath(ctx, 95, 40, 1149, 207);
-
-  //   }, []);
-
+  const popOverTimer =  () => {
+    setTimeout(() => {
+      setPopOver(null)
+    }, 4000)
+  }
+    
   return (
     <>
-      <div className="flex justify-center h-screen items-center mt-[10em] py-[40px] bg-[black] relative">
+      <div className="flex justify-center h-screen w-[95%] rounded-lg mx-auto items-center mt-[10em] py-[10em] bg-[#110727] relative">
+
         <svg
           width="900"
           height="495"
           viewBox="0 0 339 195"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="block text-center"
+          className="relative z-[1]block text-center"
         >
           <line
             x1="157.713"
@@ -112,115 +153,127 @@ function Saptrishi() {
             stroke="white"
           />
           <svg className="">
+            { circle.c1.size === 4 ? <circle cx="254" cy="16" r="8" fill="#ffffff70"/> : null}
             <circle
               cx="254"
               cy="16"
-              r={circleSize.c1}
+              r={circle.c1.size}
               fill="#D9D9D9"
               onMouseOver={() => {
-                setCircleSize({ ...circleSize, c1: 4 });
-                setPopOver({
-                  title: "Atri",
-                  description: "Atri is a Vedic sage, who is credited with composing a large number of hymns to Agni, Indra and other Vedic deities of Hinduism.",
-                  link: "/",
-                  img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Atri.jpg/220px-Atri.jpg",
-                  topVal: "40%",
-                  leftVal: "80%",
-              })
-            }}
+                setCircle({ ...circle, c1: { ...circle.c1, size: 4}});
+                setPopOver(circle.c1.data)
+              }}
               onMouseOut={() => {
-                setCircleSize({ ...circleSize, c1: 3 });
-                setPopOver(null);
+                setCircle({ ...circle, c1: { ...circle.c1, size: 3}});
+                popOverTimer();
               }}
               className="cursor-pointer"
             />
           </svg>
           <svg className="">
+          { circle.c2.size === 4 ? <circle cx="330" cy="19" r="8" fill="#ffffff70"/> : null}
             <circle
               cx="330"
               cy="19"
-              r={circleSize.c2}
+              r={circle.c2.size}
               fill="#D9D9D9"
               onMouseOver={() => {
-                setCircleSize({ ...circleSize, c2: 4 });
+                setCircle({ ...circle, c2: { ...circle.c2, size: 4}});
+                setPopOver(circle.c2.data)
               }}
               onMouseOut={() => {
-                setCircleSize({ ...circleSize, c2: 3 });
+                setCircle({ ...circle, c2: { ...circle.c2, size: 3}});
+                popOverTimer();
               }}
-              // className={`cursor-pointer ${circleSize.c2 === 4 ? "hs-tooltip-toggle" : ""}`}
+              className="cursor-pointer"
             />
           </svg>
           <svg className="">
+            { circle.c3.size === 4 ? <circle cx="216" cy="53" r="8" fill="#ffffff70"/> : null}
             <circle
               cx="216"
               cy="53"
-              r={circleSize.c3}
+              r={circle.c3.size}
               fill="#D9D9D9"
               onMouseOver={() => {
-                setCircleSize({ ...circleSize, c3: 4 });
+                setCircle({ ...circle, c3: { ...circle.c3, size: 4}});
+                setPopOver(circle.c3.data)
               }}
               onMouseOut={() => {
-                setCircleSize({ ...circleSize, c3: 3 });
+                setCircle({ ...circle, c3: { ...circle.c3, size: 3}});
+                popOverTimer();
               }}
               className="cursor-pointer"
             />
           </svg>
           <svg className="">
+          { circle.c4.size === 4 ? <circle cx="39" cy="184" r="8" fill="#ffffff70"/> : null}
             <circle
               cx="39"
               cy="184"
-              r={circleSize.c4}
+              r={circle.c4.size}
               fill="#D9D9D9"
               onMouseOver={() => {
-                setCircleSize({ ...circleSize, c4: 4 });
+                setCircle({ ...circle, c4: { ...circle.c4, size: 4}});
+                setPopOver(circle.c4.data)
               }}
               onMouseOut={() => {
-                setCircleSize({ ...circleSize, c4: 3 });
+                setCircle({ ...circle, c4: { ...circle.c4, size: 3}});
+                popOverTimer();
               }}
               className="cursor-pointer"
             />
           </svg>
           <svg className=''>
+          { circle.c5.size === 4 ? <circle cx="13" cy="105" r="8" fill="#ffffff70"/> : null}
             <circle
               cx="13"
               cy="105"
-              r={circleSize.c5}
+              r={circle.c5.size}
               fill="#D9D9D9"
               onMouseOver={() => {
-                setCircleSize({ ...circleSize, c5: 4 });
+                setCircle({ ...circle, c5: { ...circle.c5, size: 4}});
+                setPopOver(circle.c5.data)
               }}
               onMouseOut={() => {
-                setCircleSize({ ...circleSize, c5: 3 });
+                setCircle({ ...circle, c5: { ...circle.c5, size: 3}});
+                popOverTimer();
               }}
               className="cursor-pointer"
             />
           </svg>
           <svg className=''>
+            { circle.c6.size === 4 ? <circle cx="153" cy="165" r="8" fill="#ffffff70"/> : null}
             <circle
               cx="153"
               cy="165"
-              r={circleSize.c6}
+              r={circle.c6.size}
               fill="#D9D9D9"
               onMouseOver={() => {
-                setCircleSize({ ...circleSize, c6: 4 });
+                setCircle({ ...circle, c6: { ...circle.c6, size: 4}});
+                setPopOver(circle.c6.data)
               }}
               onMouseOut={() => {
-                setCircleSize({ ...circleSize, c6: 3 });
+                setCircle({ ...circle, c6: { ...circle.c6, size: 3}});
+                popOverTimer();
               }}
               className="cursor-pointer"
             />
           </svg>
           <svg className=''>
+            { circle.c7.size === 4 ? <circle cx="158" cy="94" r="8" fill="#ffffff70"/> : null}
             <circle
               cx="158"
               cy="94"
-              r={circleSize.c7}
+              r={circle.c7.size}
               fill="#D9D9D9"
               onMouseOver={() => {
-                setCircleSize({ ...circleSize, c7: 4 });
+                setCircle({ ...circle, c7: { ...circle.c7, size: 4}});
+                setPopOver(circle.c7.data)
               }}
               onMouseOut={() => {
-                setCircleSize({ ...circleSize, c7: 3 });
+                setCircle({ ...circle, c7: { ...circle.c7, size: 3}});
+                popOverTimer();
               }}
               className="cursor-pointer"
             />
@@ -239,47 +292,6 @@ function Saptrishi() {
         : null }
 
 
-
-        {/* <canvas ref={canvasRef} width={canvasSize.current[0] - 10} height={canvasSize.current[1]/1.3} onClick={getCoordinates} className={`border-[2px]`} /> */}
-
-        {/* <div className='saptarishit-container border-[1px] relative w-[80%] h-[30em]'>
-
-      <div className=' absolute top-[3em] right-[11em] flex justify-center items-center rotate-[-176deg]'>
-        <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[13em] bg-[white] rounded-full'></div>
-      </div>
-
-      <div className=' absolute top-[4.5em] right-[23.5em] flex justify-center items-center rotate-[-220deg]'>
-        <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[6em] bg-[white] rounded-full'></div>
-      </div>
-
-      <div className=' absolute top-[9em] right-[28.5em] flex justify-center items-center rotate-[-214deg]'>
-        <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[8em] bg-[white] rounded-full'></div>
-      </div>
-
-      <div className=' absolute top-[11.9em] left-[19.2em] flex justify-center items-center rotate-[-183deg]'>
-        <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[18em] bg-[white] rounded-full'></div>
-      </div>
-
-      <div className=' absolute top-[15.9em] right-[32.7em] flex justify-center items-center rotate-[-80deg]'>
-        <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[8.5em] bg-[white] rounded-full'></div>
-      </div>
-
-      <div className=' absolute top-[16.7em] left-[15.5em] flex justify-center items-center rotate-[75deg]'>
-        <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[9em] bg-[white] rounded-full'></div>
-      </div>
-
-      <div className=' absolute top-[20.8em] left-[21.3em] flex justify-center items-center rotate-[-5.4deg]'>
-        <div className='h-[8px] w-[8px] bg-[white] rounded-full'></div>
-        <div className='h-[2px] w-[14em] bg-[white] rounded-full'></div>
-      </div>
-
-      </div> */}
       </div>
     </>
   );
