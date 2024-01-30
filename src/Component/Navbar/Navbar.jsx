@@ -75,31 +75,31 @@ function Navbar() {
               </NavLink>
               <NavLink
                 className={setActive}
-                to=""
+                to="/schedule"
               >
                 Schedule
               </NavLink>
               <NavLink
                 className={setActive}
-                to=""
+                to="/ourTeam"
               >
                 Our Team
               </NavLink>
               <NavLink
                 className={setActive}
-                to=""
+                to="/shop"
               >
                 Shop
               </NavLink>
               <NavLink
                 className={setActive}
-                to=""
+                to="/volunteer"
               >
                 Volunteer with Us
               </NavLink>
               <NavLink
                 className={setActive}
-                to=""
+                to="/contactUs"
               >
                 Contact Us
               </NavLink>

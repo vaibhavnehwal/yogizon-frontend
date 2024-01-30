@@ -104,7 +104,7 @@ function Saptrishi() {
 
         <img src={SaptarishiSky} alt="" className="absolute z-0 w-full h-full object-cover rounded-lg" />
 
-        <h1 className="text-4xl z-[1] text-[#ffb406ba] font-bold tracking-3 ">Features</h1>
+        <h1 className="text-5xl z-[1] text-blue-300 font-bold tracking-3 ">Features</h1>
 
         <svg
           width="900"
