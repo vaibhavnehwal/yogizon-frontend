@@ -1,5 +1,5 @@
 import React from "react";
-import Saptrishi from "../Home/Saptrishi";
+import Saptrishi from "./Saptrishi/Saptrishi";
 import Hero from "./Hero";
 import Features from "./Features";
 import AboutUs from "./AboutUs";
@@ -17,6 +17,7 @@ function Home() {
       <div className="min-h-screen my-[6rem]">
         <Hero />
       </div>
+      <Saptrishi />
       <div>
         <FeaturesShort />
       </div>
@@ -39,7 +40,6 @@ function Home() {
         <CardLink />
       </div>
       <Gallery />
-      <Saptrishi />
       <CookieBanner />
     </div>
   );
